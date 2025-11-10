@@ -1,0 +1,106 @@
+/* ===========================
+   Estilo Día de Muertos con fondo personalizado
+   =========================== */
+
+/* Fondo principal con tu imagen */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #fffdf5;
+    background: url("iris.jpg") no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(0px);
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 2em 1em;
+    background: rgba(0, 0, 0, 0.55);
+    color: #ffda79;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+header h1 {
+    margin: 0;
+    font-family: "Cinzel Decorative", serif;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+}
+
+/* Contenedor translúcido para el cuento y audio */
+.contenedor {
+    max-width: 850px;
+    margin: 50px auto;
+    background: rgba(30, 10, 30, 0.75); /* Transparente y combina con el fondo */
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 2.5em;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255, 180, 100, 0.3);
+}
+
+/* Títulos */
+.cuento h2, .audio h2 {
+    font-family: "Cinzel Decorative", serif;
+    color: #ffd54a;
+    border-bottom: 2px solid #ff8a65;
+    padding-bottom: 0.3em;
+    text-align: center;
+}
+
+.cuento p {
+    line-height: 1.8;
+    text-align: justify;
+    color: #fff7e6;
+}
+
+/* Audio */
+.audio {
+    text-align: center;
+    margin-top: 2em;
+}
+
+audio {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.55);
+    color: #ffd54a;
+    padding: 1em 0;
+    margin-top: 40px;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* QR opcional */
+.qr {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.qr img {
+    width: 140px;
+    border-radius: 10px;
+    border: 2px solid #ffb74d;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 12px rgba(255, 183, 77, 0.4);
+}
+
+/* Ajuste para celular */
+@media (max-width: 720px) {
+    .contenedor {
+        margin: 20px;
+        padding: 1.5em;
+    }
+    header h1 {
+        font-size: 1.6em;
+    }
+}
